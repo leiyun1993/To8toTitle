@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    tools:context="com.leiyun.to8totitle.MainActivity">
+
+    <!-- <android.support.v4.widget.NestedScrollView
+         android:id="@+id/scroll_view"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- </android.support.v4.widget.NestedScrollView>-->
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#30000000">
+
+        <com.leiyun.to8totitle.ColorTrackView
+            android:id="@+id/track_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:direction="bottom"
+            app:progress="0"
+            app:text="渐变色标题"
+            app:text_change_color="#666666"
+            app:text_origin_color="@android:color/white"
+            app:text_size="18sp" />
+
+        <LinearLayout
+            android:id="@+id/msg_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp">
+
+            <com.leiyun.to8totitle.ColorTrackImageView
+                android:id="@+id/track_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_message"
+                app:icon_change_color="#666666"
+                app:icon_origin_color="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/msg_layout"
+            android:orientation="horizontal">
+
+            <com.leiyun.to8totitle.ColorTrackImageView
+                android:id="@+id/track_image_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_advisory"
+                app:icon_change_color="#666666"
+                app:icon_origin_color="@android:color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#e5e5e5" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
