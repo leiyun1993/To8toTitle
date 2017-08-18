@@ -7,9 +7,9 @@
 
 ### 实现方式
 
-采用鸿洋大神的[ColorTrackView](https://github.com/hongyangAndroid/ColorTrackView/blob/master/library_ColorTrackView/src/com/zhy/view/ColorTrackView.java)
+1、文字实现，采用鸿洋大神的[ColorTrackView](https://github.com/hongyangAndroid/ColorTrackView/blob/master/library_ColorTrackView/src/com/zhy/view/ColorTrackView.java)（感谢~~~）
 
-图标变色也是根据同样的原理写的一个简单的实现[ColorTrackImageView](https://github.com/leiyun1993/To8toTitle/blob/master/app/src/main/java/com/leiyun/to8totitle/ColorTrackImageView.java)
+2、图标变色也是根据同样的原理写的一个简单的实现[ColorTrackImageView](https://github.com/leiyun1993/To8toTitle/blob/master/app/src/main/java/com/leiyun/to8totitle/ColorTrackImageView.java)
 
 ### 监听滑动
 
